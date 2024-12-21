@@ -1,0 +1,16 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Speakeasy API:
+        inputs:
+            - location: https://www.speakeasy.com/openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/test-company-2/ws-3/speakeasy-api
+targets:
+    test-sdk-2:
+        target: python
+        source: Speakeasy API
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/test-company-2/ws-3/speakeasy-api-python-code-samples
+            blocking: false

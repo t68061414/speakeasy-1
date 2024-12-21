@@ -1,0 +1,16 @@
+# SearchWorkspaceEventsRequest
+
+
+## Fields
+
+| Field                                                            | Type                                                             | Required                                                         | Description                                                      |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| `workspace_id`                                                   | *Optional[str]*                                                  | :heavy_minus_sign:                                               | Unique identifier of the workspace.                              |
+| `source_revision_digest`                                         | *Optional[str]*                                                  | :heavy_minus_sign:                                               | Unique identifier of the source revision digest.                 |
+| `lint_report_digest`                                             | *Optional[str]*                                                  | :heavy_minus_sign:                                               | Unique identifier of the lint report digest.                     |
+| `openapi_diff_report_digest`                                     | *Optional[str]*                                                  | :heavy_minus_sign:                                               | Unique identifier of the openapi diff report digest.             |
+| `interaction_type`                                               | [Optional[models.InteractionType]](../models/interactiontype.md) | :heavy_minus_sign:                                               | Specified interaction type for events.                           |
+| `generate_gen_lock_id`                                           | *Optional[str]*                                                  | :heavy_minus_sign:                                               | A specific gen lock ID for the events.                           |
+| `execution_id`                                                   | *Optional[str]*                                                  | :heavy_minus_sign:                                               | Shared execution ID for cli events across a single action.       |
+| `success`                                                        | *Optional[bool]*                                                 | :heavy_minus_sign:                                               | Whether the event was successful or not.                         |
+| `limit`                                                          | *Optional[int]*                                                  | :heavy_minus_sign:                                               | Number of results to return.                                     |

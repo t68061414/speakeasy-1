@@ -1,0 +1,10 @@
+# SuggestRequestBody
+
+
+## Fields
+
+| Field                                                                                    | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `oas_summary`                                                                            | [models.OASSummary](../models/oassummary.md)                                             | :heavy_check_mark:                                                                       | N/A                                                                                      |
+| `suggestion_type`                                                                        | [models.SuggestRequestBodySuggestionType](../models/suggestrequestbodysuggestiontype.md) | :heavy_check_mark:                                                                       | N/A                                                                                      |
+| `diagnostics`                                                                            | List[[models.Diagnostic](../models/diagnostic.md)]                                       | :heavy_check_mark:                                                                       | N/A                                                                                      |

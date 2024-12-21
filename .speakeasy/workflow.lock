@@ -1,0 +1,34 @@
+speakeasyVersion: 1.459.2
+sources:
+    Speakeasy API:
+        sourceNamespace: speakeasy-api
+        sourceRevisionDigest: sha256:ee81967e8b2ed2f8fd48da0f0e27e3ef24b21524fcaa923a79257a6ac1001e78
+        sourceBlobDigest: sha256:2b1030ee3c1d82bb205f4230146d4632dcd59cc07c2eb266d5f294390b1188c3
+        tags:
+            - latest
+            - 0.4.0
+targets:
+    test-sdk-2:
+        source: Speakeasy API
+        sourceNamespace: speakeasy-api
+        sourceRevisionDigest: sha256:ee81967e8b2ed2f8fd48da0f0e27e3ef24b21524fcaa923a79257a6ac1001e78
+        sourceBlobDigest: sha256:2b1030ee3c1d82bb205f4230146d4632dcd59cc07c2eb266d5f294390b1188c3
+        codeSamplesNamespace: speakeasy-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:20d26aa879141f40a06df051036589b46a3c3277e03715c3d13b3db82660f84b
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Speakeasy API:
+            inputs:
+                - location: https://www.speakeasy.com/openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/test-company-2/ws-3/speakeasy-api
+    targets:
+        test-sdk-2:
+            target: python
+            source: Speakeasy API
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/test-company-2/ws-3/speakeasy-api-python-code-samples
+                blocking: false
